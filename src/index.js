@@ -3,20 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
-import Heading from './Heading'
+import App from './App';
 
 
 
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-  <>
-  <div ><Heading /> 
-  </div>
-  </>,
+<App/>,
  document.getElementById('root')
 );
 
