@@ -11,6 +11,7 @@ function ncard(val, index, arr) {
   console.log(val);
   return (
     <Card
+      key={index}
       imgsrc={val.imgsrc}
       title={val.title}
       sname={val.sname}
