@@ -1,34 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './index.css';
+import "./index.css";
 // import App from './App';
 import reportWebVitals from "./reportWebVitals";
 // import App from './App';
-import Card from './Cards';
-import Sdata from './Adata';
+import Card from "./Cards";
+import Sdata from "./Adata";
 
-
-function ncard (val,index,arr) {
-
+function ncard(val, index, arr) {
   console.log(val);
   return (
-
     <Card
-    imgsrc={val.imgsrc}
-     title={val.title}
-    sname={val.sname}
-    link={val.link}   />
-  )
- 
-
+      imgsrc={val.imgsrc}
+      title={val.title}
+      sname={val.sname}
+      link={val.link}
+    />
+  );
 }
- 
+
 // console.log(Sdata[0].sname);
 
 ReactDOM.render(
   <>
-    <h1 className='heading' >List of Top 5 Netflix Series</h1>
-    {Sdata.map(ncard)}
+    <h1 className="heading">List of Top 5 Netflix Series</h1>
+
+    <div>{Sdata.map(ncard)}</div>
   </>,
 
   document.getElementById("root")
